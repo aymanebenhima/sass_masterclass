@@ -29,6 +29,7 @@ Make sure to look closely at the extensions of each file in the command above.
 
 #### Instructions
 
+go to [project 01](./project_01/index.html)
 1. In the terminal, compile the SCSS to CSS by typing the following command and hitting Enter on your keyboard:
 
 ```
@@ -53,6 +54,7 @@ In the process, you’ll use Sass to style your very own website for a lemonade 
 
 #### Instructions
 
+go to [project 01](./project_01/main.scss)
 Take a look at the Sass code in **main.scss** and compare it to the CSS equivalent in **main.css**. What differences do you notice?
 
 Hint: Both versions produce the same effects!
@@ -98,6 +100,7 @@ Nesting allows you to see the clear DOM relationship between two selectors while
 
 #### Instructions
 
+go to [project 01](./project_01/main.scss)
 1. In **main.scss**, inside of the *.banner* class selector, nest the following:
 
 ```css
@@ -169,6 +172,7 @@ will compile to the following CSS:
 ```
 #### Instructions
 
+go to [project 01](./project_01/main.scss)
 1. In **main.scss**, nest the following properties inside of *.banner*:
 
 ```css
@@ -196,6 +200,7 @@ $translucent-white: rgba(255,255,255,0.3);
 
 #### Instructions
 
+go to [project 01](./project_01/main.scss)
 1. At the top of main.scss, create a new variable:
 
 ```scss
@@ -326,6 +331,7 @@ will compile to the following CSS:
 ```
 
 #### Instructions
+go to [project 02](./project_02/index.html)
 
 1. In **main.scss**, inside of *.notecard*, nest and invoke the following *&* selector:
 
@@ -796,6 +802,7 @@ $color2: fade-in($color, $amount); //rgba(55,7,56, 0.6)
 
 #### Instructions
 
+go to [project 03/ math](./project_03/math/main.scss)
 1. In **main.scss**, fade-out *$lagoon-blue* by 0.5:
 
 ```scss
@@ -835,6 +842,8 @@ color: #050709;
 Sass arithmetic can also compute HSLA and string colors such as *red* and *blue*.
 
 #### Instructions
+
+go to [project 03/ math](./project_03/math/main.scss)
 1. Try it. Add red and blue to make the font color of *.math* purple the following property:
 
 ```scss
@@ -861,6 +870,8 @@ Also, just like in regular math, multiplying two units together results in squar
 Since there is no such thing as squared units in CSS, the above would throw an error. You would need to multiply 10px * 10 in order to obtain *100px*.
 
 #### Instructions
+
+go to [project 03/ math](./project_03/math/main.scss)
 1. In **main.scss** inside of *.math*, include the following computations:
 
 ```scss
@@ -893,6 +904,7 @@ font-size: 10px/8px; //not division
 
 #### Instructions
 
+go to [project 03/ math](./project_03/math/main.scss)
 1. In **main.scss**, compute the *.math* selector’s font size to be a 1/2 of its height.
 
 ```scss
@@ -918,6 +930,9 @@ Each loops in Sass iterate on each of the values on a list. The syntax is as fol
 The value of *$item* is dynamically assigned to the value of the object in the list according to its position and the iteration of the loop.
 
 #### Instructions
+
+
+go to [project 03/ each loop](./project_03/each-loop/main.scss)
 1. In main.scss write an *@each* loop to assign the *background-color* of the class based on the items in *$list*:
 
 ```scss
@@ -952,6 +967,7 @@ For-loops are useful for many things, but in the following exercises we will be 
 
 #### Instructions
 
+go to [project 03/ for loop](./project_03/for-loops/main.scss)
 1. In main.scss, insert the following for-loop:
 
 ```scss
@@ -1015,6 +1031,7 @@ Click "Save" to see your changes in the browser and inspect them in the output o
 2. Having both for loops and each loops gives the programmer different formats to iterate on both lists and maps.
 
 3. The introduction of conditional statements allows you to create logic-based styling rules using SCSS.
+
 ## Sustainable SCSS
 
 Sass can be confusing if it’s not organized correctly. In this unit, we will dive into the language’s best practices.
@@ -1068,7 +1085,8 @@ The global file imports all the components and centralizes the logic.
 
 #### Instructions
 
-1. At the top of main.scss, import the variables partial:
+go to [project 04/ structure ](./project_04/sass/main.scss)
+1. At the top of **main.scss**, import the variables partial:
 
 ```scss
     @import "helper/variables";
@@ -1080,6 +1098,7 @@ Click "Save" to see your changes in the browser and inspect them in the output o
 ### @Extend
 
 Many times, when styling elements, we want the styles of one class to be applied to another in addition to its own individual styles, so the traditional approach is to give the element both classes.
+
 ```html
 <span class="lemonade"></span>
  
@@ -1120,6 +1139,8 @@ If we think of *.lemonade* as the extendee, and of .strawberry as the extender, 
 This makes it easy to maintain HTML code by removing the need to have multiple classes on an element.
 
 #### Instructions
+
+go to [project 04/ structure](./project_04/sass/main.scss)
 1. In **main.scss**, define an *.absolute* class selector as follows:
 
 ```scss
@@ -1175,6 +1196,7 @@ Placeholders are a nice way to consolidate rules that never actually get used on
 
 #### Instructions
 
+go to [project 04/ structure / helper](./project_04/sass/helper/_placeholders.scss)
 1. Notice how we never actually use .absolute anywhere in the HTML? Remove it from **main.scss** and place it inside **helper/_placeholders.scss**:
 
 ```scss
@@ -1260,6 +1282,7 @@ As a general rule of thumb, you should
 
 #### Instructions
 
+go to [project 04/ structure](./project_04/sass/helper/_mixins.scss)
 1. Remove the *center* mixin in the **helper/_mixins.scss** partial that does not take in a variable. Convert the placeholder named *%center* inside the **helper/_placeholders.scs**s partial.
 
 Be sure to change the include statements to extend inside both *span* and *h1*:
